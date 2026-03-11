@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: bruno-collection
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NjI0MTUwNTc2MTQsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJpYXQiOjE3NzMyMjEzMjcsImV4cCI6MTc3MzMwNzcyN30.VQjiSkCDqmw9AlDi0oPHOAvQ1kH8OZsFbhyqO5mNpu4
+  variables:
+    - name: url
+      value: https://kitek.ktkv.dev/marketplace//api
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
